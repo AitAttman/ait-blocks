@@ -1,0 +1,336 @@
+# Copyright (C) 2026 Ahmed Ait Attman
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ait Blocks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ait-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-02-24T08:44:39+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: ait-blocks\n"
+
+#. Plugin Name of the plugin
+#: ait-blocks.php
+msgid "Ait Blocks"
+msgstr ""
+
+#. Description of the plugin
+#: ait-blocks.php
+msgid "Enable wp custom blocks like Side-panel, Search Box, Query, Button, Slider"
+msgstr ""
+
+#. Author of the plugin
+#: ait-blocks.php
+msgid "Ahmed Ait Attman"
+msgstr ""
+
+#. Author URI of the plugin
+#: ait-blocks.php
+msgid "https://aitattman.pages.dev"
+msgstr ""
+
+#: src/query/render.php:83
+#, php-format
+msgid "Found <b>%d</b> items"
+msgstr ""
+
+#: src/query/render.php:135
+msgid "First"
+msgstr ""
+
+#: src/query/render.php:147
+msgid "Last"
+msgstr ""
+
+#: src/searchbox/render.php:16
+#: src/searchbox/edit.js:47
+msgid "search..."
+msgstr ""
+
+#: src/searchbox/render.php:34
+#: src/searchbox/edit.js:51
+msgid "Search"
+msgstr ""
+
+#: src/button/edit.js:48
+msgid "Button"
+msgstr ""
+
+#: src/button/edit.js:49
+msgid "Link"
+msgstr ""
+
+#: src/button/edit.js:50
+msgid "Span"
+msgstr ""
+
+#: src/button/edit.js:51
+msgid "Div"
+msgstr ""
+
+#: src/button/edit.js:76
+msgid "Tag type"
+msgstr ""
+
+#: src/button/edit.js:83
+msgid "Url"
+msgstr ""
+
+#: src/button/edit.js:90
+msgid "Column Layout"
+msgstr ""
+
+#: src/button/edit.js:97
+msgid "Reverse"
+msgstr ""
+
+#: src/button/edit.js:104
+msgid "Enable icon"
+msgstr ""
+
+#: src/button/edit.js:112
+msgid "Icon"
+msgstr ""
+
+#: src/query/edit.js:79
+msgid "Query"
+msgstr ""
+
+#: src/query/edit.js:81
+msgid "Use default query"
+msgstr ""
+
+#: src/query/edit.js:91
+msgid "Show items found message"
+msgstr ""
+
+#: src/query/edit.js:103
+msgid "For related Posts"
+msgstr ""
+
+#: src/query/edit.js:111
+msgid "N.b. works in single posts"
+msgstr ""
+
+#: src/query/edit.js:116
+#: src/slider/edit.js:88
+msgid "Post Type"
+msgstr ""
+
+#: src/query/edit.js:121
+#: src/slider/edit.js:93
+msgid "eg: post, page, product"
+msgstr ""
+
+#: src/query/edit.js:124
+#: src/slider/edit.js:96
+msgid "Category SLug"
+msgstr ""
+
+#: src/query/edit.js:136
+#: src/slider/edit.js:107
+msgid "Taxonomy"
+msgstr ""
+
+#: src/query/edit.js:146
+#: src/slider/edit.js:129
+msgid "Number of posts"
+msgstr ""
+
+#: src/query/edit.js:159
+#: src/slider/edit.js:121
+msgid "Thumbnail Size"
+msgstr ""
+
+#: src/query/edit.js:169
+msgid "Show Author Name"
+msgstr ""
+
+#: src/query/edit.js:179
+msgid "Show Date"
+msgstr ""
+
+#: src/query/edit.js:189
+msgid "Show Excerpt"
+msgstr ""
+
+#: src/query/edit.js:200
+msgid "Excerpt length"
+msgstr ""
+
+#: src/query/edit.js:208
+msgid "Number of characters for excerpt."
+msgstr ""
+
+#: src/query/edit.js:212
+msgid "Use pagination"
+msgstr ""
+
+#: src/query/edit.js:222
+msgid "Use search"
+msgstr ""
+
+#: src/query/edit.js:236
+msgid "N.B. this is just an example, not the actual preview"
+msgstr ""
+
+#: src/query/edit.js:244
+msgid "Found 33 items"
+msgstr ""
+
+#: src/searchbox/edit.js:19
+msgid "Settings"
+msgstr ""
+
+#: src/searchbox/edit.js:21
+msgid "Show icon"
+msgstr ""
+
+#: src/searchbox/edit.js:28
+msgid "Search Label"
+msgstr ""
+
+#: src/searchbox/edit.js:35
+msgid "Placeholder"
+msgstr ""
+
+#: src/sidepanel/edit.js:43
+msgid "Triggers class name"
+msgstr ""
+
+#: src/sidepanel/edit.js:48
+msgid "Add 'action-close' class to trigger to close the panel"
+msgstr ""
+
+#: src/sidepanel/edit.js:56
+msgid "Start"
+msgstr ""
+
+#: src/sidepanel/edit.js:61
+msgid "End"
+msgstr ""
+
+#: src/sidepanel/edit.js:66
+msgid "Top"
+msgstr ""
+
+#: src/sidepanel/edit.js:71
+msgid "Bottom"
+msgstr ""
+
+#: src/slider/edit.js:52
+msgid "Thumbnail will appear Here"
+msgstr ""
+
+#: src/slider/edit.js:57
+msgid "Caption will be shown here..."
+msgstr ""
+
+#: src/slider/edit.js:104
+msgid "Taxonomy term slug"
+msgstr ""
+
+#: src/slider/edit.js:115
+msgid "eg: category, post_tag, product_cat, product_tag"
+msgstr ""
+
+#: src/slider/edit.js:140
+msgid "Show Caption"
+msgstr ""
+
+#: src/slider/edit.js:152
+msgid "Navigation Buttons"
+msgstr ""
+
+#: src/slider/edit.js:162
+msgid "Navigation Dots"
+msgstr ""
+
+#: src/slider/edit.js:169
+msgid "Autoplay"
+msgstr ""
+
+#: src/slider/edit.js:176
+msgid "Interval"
+msgstr ""
+
+#: src/slider/edit.js:177
+msgid "Only if autoplay is enabled"
+msgstr ""
+
+#: src/theme-controllers/edit.js:40
+msgid "Light Icon"
+msgstr ""
+
+#: src/theme-controllers/edit.js:45
+msgid "Dark Icon"
+msgstr ""
+
+#: src/theme-controllers/edit.js:50
+msgid "System Icon"
+msgstr ""
+
+#: src/button/block.json
+msgctxt "block title"
+msgid "Button"
+msgstr ""
+
+#: src/button/block.json
+msgctxt "block description"
+msgid "Button with Icon"
+msgstr ""
+
+#: src/query/block.json
+msgctxt "block title"
+msgid "Query Posts"
+msgstr ""
+
+#: src/query/block.json
+msgctxt "block description"
+msgid "Query wordpress posts based on category and post type"
+msgstr ""
+
+#: src/searchbox/block.json
+msgctxt "block title"
+msgid "Searchbox"
+msgstr ""
+
+#: src/searchbox/block.json
+msgctxt "block description"
+msgid "Search Box"
+msgstr ""
+
+#: src/sidepanel/block.json
+msgctxt "block title"
+msgid "Sidepanel"
+msgstr ""
+
+#: src/sidepanel/block.json
+msgctxt "block description"
+msgid "Example block scaffolded with Create Block tool."
+msgstr ""
+
+#: src/slider/block.json
+msgctxt "block title"
+msgid "Slider"
+msgstr ""
+
+#: src/slider/block.json
+msgctxt "block description"
+msgid "Single touchable slider by Ait Attman"
+msgstr ""
+
+#: src/theme-controllers/block.json
+msgctxt "block title"
+msgid "Theme Controllers"
+msgstr ""
+
+#: src/theme-controllers/block.json
+msgctxt "block description"
+msgid "Control theme display"
+msgstr ""

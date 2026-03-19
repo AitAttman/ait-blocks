@@ -1,0 +1,15 @@
+[data-element="ait_theme_controllers"] {
+	display: flex;
+	gap: 0.5rem;
+	label {
+		cursor: pointer;
+	}
+	.hidden {
+		display: none;
+	}
+	input {
+		&:checked + .icon-container svg {
+			stroke: #ff8b26;
+		}
+	}
+}

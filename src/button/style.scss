@@ -1,0 +1,32 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-aitattman-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	border-radius: 0.25rem;
+	&.is-col {
+		flex-direction: column;
+	}
+	&.reverse-col {
+		flex-flow: column-reverse;
+	}
+	&.reverse-row {
+		flex-flow: row-reverse;
+	}
+	span:has(svg) {
+		display: flex;
+	}
+}
+button.wp-block-aitattman-button {
+	cursor: pointer;
+	outline: transparent;
+	border: none;
+	background-color: transparent;
+}

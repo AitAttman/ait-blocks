@@ -1,0 +1,46 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+[data-element="ait_searchbox"] {
+	--input-bg: #ffffff;
+	width: 100%;
+	& > .container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		border-radius: 0.25rem;
+		input {
+			padding-inline-end: 2.5rem;
+			padding-inline-start: 0.5rem;
+			padding-block: 0.5rem;
+			border: none;
+			border-radius: 0.25rem;
+			border: 2px solid #e4e4e4;
+			background-color: var(--input-bg);
+			&:focus {
+				border: 2px solid #d1edff;
+				outline: none;
+			}
+		}
+		button {
+			position: absolute;
+			inset-inline-end: 0;
+			outline: transparent;
+			border: none;
+			cursor: pointer;
+			display: flex;
+			background-color: transparent;
+			height: 100%;
+			align-items: center;
+			svg {
+				pointer-events: none;
+			}
+			&:hover svg {
+				scale: 0.9;
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+/**
+* this must be visible only in front end
+*/
+.wp-block-aitattman-sidepanel {
+	display: block;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	transition:
+		inset-inline-start 0.3s ease-in-out,
+		inset-inline-end 0.3s ease-in-out,
+		top 0.3s ease-in-out,
+		bottom 0.3s ease-in-out;
+	z-index: 100002;
+	inset-inline-start: -120%;
+	inset-inline-end: unset;
+	&[data-position="end"] {
+		inset-inline-start: unset;
+		inset-inline-end: -120%;
+	}
+	&[data-position="top"],
+	&[data-position="bottom"] {
+		inset-inline-start: 0;
+		inset-inline-end: 0;
+		max-height: 80vh;
+		overflow-y: auto;
+		width: auto !important;
+	}
+	&[data-position="top"] {
+		top: -120%;
+		bottom: unset;
+	}
+	&[data-position="bottom"] {
+		bottom: -120%;
+		top: unset;
+	}
+	& + * {
+		z-index: 100000;
+		position: fixed;
+		cursor: pointer;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		visibility: hidden;
+		opacity: 0;
+		scale: 0;
+		background-color: #000;
+		transition:
+			opacity 0.3s ease-in-out,
+			visibility 0.3s ease-in-out;
+	}
+	&[data-visible="true"] {
+		inset-inline-start: 0;
+		inset-inline-end: unset;
+		&[data-position="end"] {
+			inset-inline-start: unset;
+			inset-inline-end: 0;
+		}
+		&[data-position="top"] {
+			top: 0;
+			inset-inline-end: 0;
+		}
+		&[data-position="bottom"] {
+			bottom: 0;
+			inset-inline-end: 0;
+		}
+		& + * {
+			scale: 1;
+			visibility: visible;
+			opacity: 0.2;
+		}
+	}
+}
