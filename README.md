@@ -6,7 +6,7 @@ However, wordpress itself does not provide some blocks you likely need for your 
 ## Installation
 There are two ways to install this plugin on your wordperss site:
 ### Method 1:
-Download the already compressed file **ait-blocks.zip** from [mediafire](#).
+Download the already compressed file **ait-blocks.zip** from [dropbox](https://www.dropbox.com/scl/fi/t1s22m2fumtalspq7mfym/ait-blocks.zip?rlkey=ubfiaxlugw3ef462vrw62wc3g&e=1&st=wx78dyn3&dl=1).
 ### Method 2:
 1. Clone this repository to your machine and run <code>**npm run build**</code>
 2. Move these files: **build** [folder], **langauges** [folder], **ait-blocks.php** [file] to a directory named: **ait-blocks**.
@@ -27,28 +27,18 @@ The Slider/Carousel displays posts with thumbnails based on post type, category,
 ![Wordpress carousel block](docs/images/slider.webp)
 ### 2. Query Posts
 Custom query to display recent posts
-<p align="center">
 ![wordpress custom query block](docs/images/query-posts.webp)
-</p>
 ### 3. Search Box Block
 Custom search box with search icon
-<p align="center">
 ![Wordpress search box block](docs/images/searchbox.webp)
-</p>
 ### 4. Side-panel
 Display hidden sidepanels in position like left, right, top, bottom. To show/hide panel just define **Triggers Class Name** and it that class to **buttons** and elements you want to control the sidepanel.
 
 You can make the trigger to close hide the panel by adding class: **action-close**
-<p align="center">
 ![wordpress side panel block](docs/images/sidepanel.webp)
-</p>
 ### 5. Button Block
 Custom button block with/without svg icon. To convert the button to link element just choose "link" from **Tag Type** and enter the url.
-<p align="center">
 ![Wordpress custom button block with svg icon](docs/images/button.webp)
-</p>
 ### 6. Theme Controllers
 Custom dark/light mode icons based
-<p align="center">
 ![Wordpres theme controllers block](docs/images/theme-controllers.webp)
-</p>
