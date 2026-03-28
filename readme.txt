@@ -1,6 +1,7 @@
 === Ait Blocks ===
 Contributors: aitattman
 Tags: Block Editor, Side-panels, Buttons, Carousel
+Version: 1.1.0
 Requires at least: 6.4
 Tested up to: 6.9
 Requires PHP: 8.1
@@ -66,6 +67,10 @@ No. The *Slider* in current version can only display posts featured thumbnails w
 For performance reasons, you can only see example of these blocks; *Slider* and *Query Posts*, not live preview in the editor. However, you can see the resulted block anytime on your public site.
 
 == Changelog ==
+
+= 1.1.0 - March 2026 =
+* Fixed some translation issues.
+* Removed blocks-manifest.php file and used block.json files instead.
 
 = 1.0.0 - February 2026 =
 * Initial release of Ait Block for Gutenberg.

@@ -1,336 +1,350 @@
-# Copyright (C) 2026 Ahmed Ait Attman
+# Copyright (C) 2026 Ait Blocks
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Ait Blocks 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ait-blocks\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Ahmed Ait Attman <aitattman@outlook.com>\n"
+"Language: de_DE\n"
+"Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-02-24T08:44:39+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2026-03-27 08:36+0000\n"
+"PO-Revision-Date: 2026-03-27 09:59+0100\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: ait-blocks\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Plugin Name of the plugin
 #: ait-blocks.php
 msgid "Ait Blocks"
 msgstr "Ait Blocks"
 
+#. Plugin URI of the plugin
+#: ait-blocks.php
+msgid "https://github.com/AitAttman/ait-blocks"
+msgstr "https://github.com/AitAttman/ait-blocks"
+
 #. Description of the plugin
 #: ait-blocks.php
-msgid "Enable wp custom blocks like Side-panel, Search Box, Query, Button, Slider"
-msgstr "Aktivieren Sie benutzerdefinierte WP-Blöcke wie Seitenleiste, Suchfeld, Abfrage, Button und Slider"
+msgid "Enable Wordpress custom blocks like Side-panel, Search Box, Query Posts, Button, Slider and Theme Controllers"
+msgstr "Aktivieren Sie benutzerdefinierte WordPress-Blöcke wie Seitenleiste, Suchfeld, Beitragsabfrage, Button, Slider und Theme-Controller."
 
 #. Author of the plugin
 #: ait-blocks.php
-msgid "Ahmed Ait Attman"
-msgstr "Ahmed Ait Attman"
+msgid "Ahmed Ait Attman <aitattman@outlook.com>"
+msgstr "Ahmed Ait Attman <aitattman@outlook.com>"
 
 #. Author URI of the plugin
 #: ait-blocks.php
 msgid "https://aitattman.pages.dev"
 msgstr "https://aitattman.pages.dev"
 
-#: src/query/render.php:83
+#. translators: %d: number of posts found
+#: build/query/render.php:91
 #, php-format
-msgid "Found <b>%d</b> items"
-msgstr "<b>%d</b> Elemente gefunden"
+msgid "Found %d items"
+msgstr "%d Elemente gefunden"
 
-#: src/query/render.php:135
+#: build/query/render.php:144
 msgid "First"
 msgstr "Erster"
 
-#: src/query/render.php:147
+#: build/query/render.php:156
 msgid "Last"
 msgstr "Letzter"
 
-#: src/searchbox/render.php:16
-#: src/searchbox/edit.js:47
+#: build/searchbox/render.php:23
+#: build/searchbox/index.js:1
 msgid "search..."
 msgstr "suchen..."
 
-#: src/searchbox/render.php:34
-#: src/searchbox/edit.js:51
+#: build/searchbox/render.php:41
+#: build/searchbox/index.js:1
 msgid "Search"
 msgstr "Suche"
 
-#: src/button/edit.js:48
+#: build/button/index.js:1
 msgid "Button"
 msgstr "Button"
 
-#: src/button/edit.js:49
+#: build/button/index.js:1
 msgid "Link"
 msgstr "Link"
 
-#: src/button/edit.js:50
+#: build/button/index.js:1
 msgid "Span"
 msgstr "Span"
 
-#: src/button/edit.js:51
+#: build/button/index.js:1
 msgid "Div"
 msgstr "Div"
 
-#: src/button/edit.js:76
-msgid "Tag type"
-msgstr "Tag-Typ"
-
-#: src/button/edit.js:83
-msgid "Url"
-msgstr "URL"
-
-#: src/button/edit.js:90
-msgid "Column Layout"
-msgstr "Spalten-Layout"
-
-#: src/button/edit.js:97
-msgid "Reverse"
-msgstr "Umkehren"
-
-#: src/button/edit.js:104
-msgid "Enable icon"
-msgstr "Icon aktivieren"
-
-#: src/button/edit.js:112
-msgid "Icon"
-msgstr "Icon"
-
-#: src/query/edit.js:79
-msgid "Query"
-msgstr "Abfrage"
-
-#: src/query/edit.js:81
-msgid "Use default query"
-msgstr "Standardabfrage verwenden"
-
-#: src/query/edit.js:91
-msgid "Show items found message"
-msgstr "Nachricht für gefundene Elemente anzeigen"
-
-#: src/query/edit.js:103
-msgid "For related Posts"
-msgstr "Für verwandte Beiträge"
-
-#: src/query/edit.js:111
-msgid "N.b. works in single posts"
-msgstr "Hinweis: Funktioniert in Einzelbeiträgen"
-
-#: src/query/edit.js:116
-#: src/slider/edit.js:88
-msgid "Post Type"
-msgstr "Beitragstyp"
-
-#: src/query/edit.js:121
-#: src/slider/edit.js:93
-msgid "eg: post, page, product"
-msgstr "z.B.: post, page, product"
-
-#: src/query/edit.js:124
-#: src/slider/edit.js:96
-msgid "Category SLug"
-msgstr "Kategorie-Slug"
-
-#: src/query/edit.js:136
-#: src/slider/edit.js:107
-msgid "Taxonomy"
-msgstr "Taxonomie"
-
-#: src/query/edit.js:146
-#: src/slider/edit.js:129
-msgid "Number of posts"
-msgstr "Anzahl der Beiträge"
-
-#: src/query/edit.js:159
-#: src/slider/edit.js:121
-msgid "Thumbnail Size"
-msgstr "Vorschaubildgröße"
-
-#: src/query/edit.js:169
-msgid "Show Author Name"
-msgstr "Autorennamen anzeigen"
-
-#: src/query/edit.js:179
-msgid "Show Date"
-msgstr "Datum anzeigen"
-
-#: src/query/edit.js:189
-msgid "Show Excerpt"
-msgstr "Auszug anzeigen"
-
-#: src/query/edit.js:200
-msgid "Excerpt length"
-msgstr "Auszugslänge"
-
-#: src/query/edit.js:208
-msgid "Number of characters for excerpt."
-msgstr "Anzahl der Zeichen für den Auszug."
-
-#: src/query/edit.js:212
-msgid "Use pagination"
-msgstr "Paginierung verwenden"
-
-#: src/query/edit.js:222
-msgid "Use search"
-msgstr "Suche verwenden"
-
-#: src/query/edit.js:236
-msgid "N.B. this is just an example, not the actual preview"
-msgstr "Hinweis: Dies ist nur ein Beispiel, keine echte Vorschau"
-
-#: src/query/edit.js:244
-msgid "Found 33 items"
-msgstr "33 Elemente gefunden"
-
-#: src/searchbox/edit.js:19
+#: build/button/index.js:1
+#: build/searchbox/index.js:1
+#: build/theme-controllers/index.js:1
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: src/searchbox/edit.js:21
+#: build/button/index.js:1
+msgid "Tag type"
+msgstr "Tag-Typ"
+
+#: build/button/index.js:1
+msgid "Url"
+msgstr "URL"
+
+#: build/button/index.js:1
+msgid "Column Layout"
+msgstr "Spalten-Layout"
+
+#: build/button/index.js:1
+msgid "Reverse"
+msgstr "Umkehren"
+
+#: build/button/index.js:1
+msgid "Enable icon"
+msgstr "Icon aktivieren"
+
+#: build/button/index.js:1
+msgid "Icon"
+msgstr "Icon"
+
+#: build/query/index.js:1
+msgid "Query"
+msgstr "Abfrage"
+
+#: build/query/index.js:1
+msgid "Use default query"
+msgstr "Standardabfrage verwenden"
+
+#: build/query/index.js:1
+msgid "Show items found message"
+msgstr "Meldung für gefundene Elemente anzeigen"
+
+#: build/query/index.js:1
+msgid "For related Posts"
+msgstr "Für ähnliche Beiträge"
+
+#: build/query/index.js:1
+msgid "N.b. works in single posts"
+msgstr "Hinweis: Funktioniert in Einzelbeiträgen"
+
+#: build/query/index.js:1
+#: build/slider/index.js:1
+msgid "Post Type"
+msgstr "Inhaltstyp"
+
+#: build/query/index.js:1
+#: build/slider/index.js:1
+msgid "eg: post, page, product"
+msgstr "z.B. post, page, product"
+
+#: build/query/index.js:1
+#: build/slider/index.js:1
+msgid "Category SLug"
+msgstr "Kategorie-Slug"
+
+#: build/query/index.js:1
+#: build/slider/index.js:1
+msgid "Taxonomy"
+msgstr "Taxonomie"
+
+#: build/query/index.js:1
+#: build/slider/index.js:1
+msgid "Number of posts"
+msgstr "Anzahl der Beiträge"
+
+#: build/query/index.js:1
+#: build/slider/index.js:1
+msgid "Thumbnail Size"
+msgstr "Vorschaubild-Größe"
+
+#: build/query/index.js:1
+msgid "Show Author Name"
+msgstr "Autorennamen anzeigen"
+
+#: build/query/index.js:1
+msgid "Show Date"
+msgstr "Datum anzeigen"
+
+#: build/query/index.js:1
+msgid "Show Excerpt"
+msgstr "Textauszug anzeigen"
+
+#: build/query/index.js:1
+msgid "Excerpt length"
+msgstr "Auszugslänge"
+
+#: build/query/index.js:1
+msgid "Number of characters for excerpt."
+msgstr "Anzahl der Zeichen für den Textauszug."
+
+#: build/query/index.js:1
+msgid "Use pagination"
+msgstr "Paginierung verwenden"
+
+#: build/query/index.js:1
+msgid "Use search"
+msgstr "Suche verwenden"
+
+#: build/query/index.js:1
+msgid "N.B. this is just an example, not the actual preview"
+msgstr "Hinweis: Dies ist nur ein Beispiel, keine echte Vorschau"
+
+#: build/query/index.js:1
+msgid "Found 33 items"
+msgstr "33 Elemente gefunden"
+
+#: build/searchbox/index.js:1
 msgid "Show icon"
 msgstr "Icon anzeigen"
 
-#: src/searchbox/edit.js:28
+#: build/searchbox/index.js:1
 msgid "Search Label"
 msgstr "Suchbeschriftung"
 
-#: src/searchbox/edit.js:35
+#: build/searchbox/index.js:1
 msgid "Placeholder"
 msgstr "Platzhalter"
 
-#: src/sidepanel/edit.js:43
+#: build/sidepanel/index.js:1
 msgid "Triggers class name"
 msgstr "Klassenname der Trigger"
 
-#: src/sidepanel/edit.js:48
+#: build/sidepanel/index.js:1
 msgid "Add 'action-close' class to trigger to close the panel"
 msgstr "Klasse 'action-close' zum Trigger hinzufügen, um das Panel zu schließen"
 
-#: src/sidepanel/edit.js:56
+#: build/sidepanel/index.js:1
 msgid "Start"
 msgstr "Start"
 
-#: src/sidepanel/edit.js:61
+#: build/sidepanel/index.js:1
 msgid "End"
 msgstr "Ende"
 
-#: src/sidepanel/edit.js:66
+#: build/sidepanel/index.js:1
 msgid "Top"
 msgstr "Oben"
 
-#: src/sidepanel/edit.js:71
+#: build/sidepanel/index.js:1
 msgid "Bottom"
 msgstr "Unten"
 
-#: src/slider/edit.js:52
+#: build/slider/index.js:1
 msgid "Thumbnail will appear Here"
 msgstr "Vorschaubild erscheint hier"
 
-#: src/slider/edit.js:57
+#: build/slider/index.js:1
 msgid "Caption will be shown here..."
 msgstr "Beschriftung wird hier angezeigt..."
 
-#: src/slider/edit.js:104
+#: build/slider/index.js:1
+msgid "Posts Settings"
+msgstr "Beitragseinstellungen"
+
+#: build/slider/index.js:1
 msgid "Taxonomy term slug"
-msgstr "Slug des Taxonomie-Begriffs"
+msgstr "Taxonomie-Begriff-Slug"
 
-#: src/slider/edit.js:115
+#: build/slider/index.js:1
 msgid "eg: category, post_tag, product_cat, product_tag"
-msgstr "z.B.: category, post_tag, product_cat, product_tag"
+msgstr "z.B. category, post_tag, product_cat, product_tag"
 
-#: src/slider/edit.js:140
+#: build/slider/index.js:1
 msgid "Show Caption"
 msgstr "Beschriftung anzeigen"
 
-#: src/slider/edit.js:152
+#: build/slider/index.js:1
 msgid "Navigation Buttons"
-msgstr "Navigationsschaltflächen"
+msgstr "Navigationstasten"
 
-#: src/slider/edit.js:162
+#: build/slider/index.js:1
 msgid "Navigation Dots"
 msgstr "Navigationspunkte"
 
-#: src/slider/edit.js:169
+#: build/slider/index.js:1
 msgid "Autoplay"
 msgstr "Autoplay"
 
-#: src/slider/edit.js:176
+#: build/slider/index.js:1
 msgid "Interval"
 msgstr "Intervall"
 
-#: src/slider/edit.js:177
+#: build/slider/index.js:1
 msgid "Only if autoplay is enabled"
 msgstr "Nur wenn Autoplay aktiviert ist"
 
-#: src/theme-controllers/edit.js:40
+#: build/theme-controllers/index.js:1
 msgid "Light Icon"
 msgstr "Hell-Icon"
 
-#: src/theme-controllers/edit.js:45
+#: build/theme-controllers/index.js:1
 msgid "Dark Icon"
 msgstr "Dunkel-Icon"
 
-#: src/theme-controllers/edit.js:50
+#: build/theme-controllers/index.js:1
 msgid "System Icon"
 msgstr "System-Icon"
 
-#: src/button/block.json
+#: build/button/block.json
 msgctxt "block title"
 msgid "Button"
 msgstr "Button"
 
-#: src/button/block.json
+#: build/button/block.json
 msgctxt "block description"
-msgid "Button with Icon"
-msgstr "Button mit Icon"
+msgid "Display button or link with integrated SVG icon support."
+msgstr "Zeigen Sie einen Button oder Link mit integrierter SVG-Icon-Unterstützung an."
 
-#: src/query/block.json
+#: build/query/block.json
 msgctxt "block title"
 msgid "Query Posts"
 msgstr "Beitragsabfrage"
 
-#: src/query/block.json
+#: build/query/block.json
 msgctxt "block description"
-msgid "Query wordpress posts based on category and post type"
-msgstr "Abfrage von WordPress-Beiträgen basierend auf Kategorie und Beitragstyp"
+msgid "Custom query to display posts filtered by category and post type."
+msgstr "Benutzerdefinierte Abfrage zur Anzeige von Beiträgen, gefiltert nach Kategorie und Inhaltstyp."
 
-#: src/searchbox/block.json
+#: build/searchbox/block.json
 msgctxt "block title"
-msgid "Searchbox"
-msgstr "Suchbox"
-
-#: src/searchbox/block.json
-msgctxt "block description"
 msgid "Search Box"
-msgstr "Suchbox"
+msgstr "Suchfeld"
 
-#: src/sidepanel/block.json
-msgctxt "block title"
-msgid "Sidepanel"
-msgstr "Seitenpanel"
-
-#: src/sidepanel/block.json
+#: build/searchbox/block.json
 msgctxt "block description"
-msgid "Example block scaffolded with Create Block tool."
-msgstr "Beispielblock, erstellt mit dem Create Block-Tool."
+msgid "Search posts filtered specifically by the active post type."
+msgstr "Suchen Sie nach Beiträgen, die speziell nach dem aktiven Inhaltstyp gefiltert sind."
 
-#: src/slider/block.json
+#: build/sidepanel/block.json
+msgctxt "block title"
+msgid "Side Panel"
+msgstr "Seitenleiste"
+
+#: build/sidepanel/block.json
+msgctxt "block description"
+msgid "Slide-out drawer for any side of the screen, triggered by a button you choose."
+msgstr "Ausziehbares Panel für jede Seite des Bildschirms, das durch einen von Ihnen gewählten Button ausgelöst wird."
+
+#: build/slider/block.json
 msgctxt "block title"
 msgid "Slider"
 msgstr "Slider"
 
-#: src/slider/block.json
+#: build/slider/block.json
 msgctxt "block description"
-msgid "Single touchable slider by Ait Attman"
-msgstr "Einfacher Touch-Slider von Ait Attman"
+msgid "Display your latest posts in a responsive, single-slide carousel."
+msgstr "Zeigen Sie Ihre neuesten Beiträge in einem responsiven Karussell mit einer Folie an."
 
-#: src/theme-controllers/block.json
+#: build/theme-controllers/block.json
 msgctxt "block title"
 msgid "Theme Controllers"
 msgstr "Theme-Controller"
 
-#: src/theme-controllers/block.json
+#: build/theme-controllers/block.json
 msgctxt "block description"
-msgid "Control theme display"
-msgstr "Theme-Anzeige steuern"
+msgid "Let user choose between light and dark modes anytime."
+msgstr "Ermöglicht dem Benutzer jederzeit den Wechsel zwischen hellem und dunklem Modus."

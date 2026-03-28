@@ -83,7 +83,7 @@ export default function Edit({ attributes, setAttributes }) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title="Content Settings">
+				<PanelBody title={__("Posts Settings", "ait-blocks")}>
 					<TextControl
 						label={__("Post Type", "ait-blocks")}
 						value={attributes.postType ?? ""}

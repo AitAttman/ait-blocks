@@ -71,7 +71,7 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title="Settings">
+				<PanelBody title={__("Settings", "ait-blocks")}>
 					<SelectControl
 						label={__("Tag type", "ait-blocks")}
 						value={attributes.tag ?? "button"}

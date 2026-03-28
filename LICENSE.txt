@@ -1,5 +1,6 @@
 === Ait Blocks ===
 Contributors:      Ahmed Ait Attman
+Version:		   1.1.0
 Tags:              block
 Tested up to:      6.8
 Stable tag:        1.0.0

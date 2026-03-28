@@ -3,7 +3,7 @@
 /**
  * Plugin Name:       Ait Blocks
  * Description:       Enable Wordpress custom blocks like Side-panel, Search Box, Query Posts, Button, Slider and Theme Controllers
- * Version:           1.0.0
+ * Version:           1.1.0
  * Requires at least: 6.4
  * Requires PHP:      8.1
  * Tested up to:      6.9
@@ -13,6 +13,7 @@
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       ait-blocks
+ * Domain Path:       /languages
  *
  */
 
@@ -23,44 +24,26 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
-/**
- * Note: if the plugin is hosted on Wordpress Plugins directory, there is no need for load_plugin_textdomain() function
- * Wordpress loads the text domain automatically
- *==================================
- * load php translations
- * Note: this did not work inside 'init' hook, and used 'plugins_loaded' instead
- * =============================
-add_action('plugins_loaded', function () {
-	load_plugin_textdomain(
-		'ait-blocks',
-		false,
-		dirname(plugin_basename(__FILE__)) . '/languages'
-	);
-});
-=========================== **/
-
 
 add_action('init', function () {
 	/**
-	 * Registers the block(s) metadata from the `blocks-manifest.php` and registers the block type(s)
-	 * based on the registered block metadata. Behind the scenes, it registers also all assets so they can be enqueued
-	 * through the block editor in the corresponding context.
-	 *
-	 * @see https://make.wordpress.org/core/2025/03/13/more-efficient-block-type-registration-in-6-8/
-	 * @see https://make.wordpress.org/core/2024/10/17/new-block-type-registration-apis-to-improve-performance-in-wordpress-6-7/
+	 * blocks folders names.
+	 * Blocks names can be also loaded from "build/blocks-manifest.php" when "--blocks-manifest" is used in
+	 * command: wp-scripts build --blocks-manifest
 	 */
-	wp_register_block_types_from_metadata_collection(__DIR__ . '/build', __DIR__ . '/build/blocks-manifest.php');
+	$blocks = ['button', 'query', 'searchbox', 'sidepanel', 'slider', 'theme-controllers'];
 
 	/**
-	 * load blocks json translations
+	 * Register blocks from the manifest
 	 */
-	$blocks = include plugin_dir_path(__FILE__) . 'build/blocks-manifest.php';
-	foreach ($blocks as $blockName => $data) {
-		$handle =  "aitattman-$blockName-editor-script";
-		wp_set_script_translations(
-			$handle,
-			'ait-blocks',
-			plugin_dir_path(__FILE__) . 'languages'
-		);
+	foreach ($blocks as $block_name) {
+
+		$block_folder = plugin_dir_path(__FILE__) . 'build/' . $block_name;
+
+		/**
+		 * do not override title and descriptions in second argument and
+		 * let Wordpress load translations automatically.
+		 */
+		register_block_type_from_metadata($block_folder);
 	}
-});
+}, 10);

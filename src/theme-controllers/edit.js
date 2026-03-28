@@ -35,7 +35,7 @@ export default function Edit({ attributes, setAttributes, isSelected }) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title="Settings">
+				<PanelBody title={__("Settings", "ait-blocks")}>
 					<TextareaControl
 						label={__("Light Icon", "ait-blocks")}
 						value={attributes.iconLight ?? ""}
