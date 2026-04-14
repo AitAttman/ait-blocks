@@ -4,11 +4,12 @@ Tags: Block Editor, Side-panels, Buttons, Carousel
 Requires at least: 6.4
 Tested up to: 6.9
 Requires PHP: 8.1
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Some essential custom blocks for the Gutenberg Editor to expand WordPress site functionality.
+
 
 == Description ==
 
@@ -55,7 +56,7 @@ You can add **Triggers Class Name** in configuration sidebar of Side-panel, and 
 For instance, if the triggers class name is "sidemenu-trigger", and to close the Side-panel by a button, just add to that button these two classes: **"sidemenu-trigger action-close"**
 
 = Can I display svg icons using this plugin? =
-Yes. With **Button** block, you can add an svg icon in the sidebar controls. You can as well add text side by side with the icon and add link or make it simple element for display purposes.
+Yes. With **Button** block, you can add svg icon in the sidebar controls. You can as well add text side by side with the icon and add link or make it simple element for display purposes.
 
 You can copy svg icons from websites that offer free icons like [https://lucide.dev/icons](https://lucide.dev/icons).
 
@@ -68,7 +69,15 @@ For performance reasons, you can only see an example of these blocks; *Slider* a
 = How does Theme Controllers block change site theme ? =
 This block updates the data-theme="{theme}" attribute (where {theme} value can be: light, dark, or system) whenever the user clicks on the theme icon on the public site. Keep in mind that this block does not register the theme value in database; instead, it uses browser's *localStorage* to persist the user's preference.
 
+== Development ==
+You can browse the source code and contribute to the development of this plugin in the GitHub repository:
+
+[https://github.com/AitAttman/aitattman-blocks](https://github.com/AitAttman/aitattman-blocks)
+
 == Changelog ==
+
+= 1.3.0 - April 2026 =
+* Fixed bugs and minor changes.
 
 = 1.2.0 - April 2026 =
 * Changed plugin name and slug.
@@ -79,4 +88,4 @@ This block updates the data-theme="{theme}" attribute (where {theme} value can b
 * Removed blocks-manifest.php file and used block.json files instead.
 
 = 1.0.0 - February 2026 =
-* Initial release of *AitAttman Blocks for Gutenberg plugin*.
+* Initial release of *AitAttman Blocks* plugin.

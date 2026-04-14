@@ -17,7 +17,7 @@
 		"make-mo": "wp i18n make-mo languages/",
 		"make-json": "wp i18n make-json languages/ --no-purge",
 		"zip-plugin": "mkdir -p aitattman-blocks && cp -r build languages aitattman-blocks.php README.md LICENSE.txt aitattman-blocks/ && zip -r plugin.zip . -i 'aitattman-blocks/*' -m",
-		"zip-for-wp": "mkdir -p aitattman-blocks && cp -r aitattman-blocks.php build readme.wp.txt LICENSE.txt aitattman-blocks/ && zip -r wp-aitattman-blocks.zip . -i 'aitattman-blocks/*' -m"
+		"zip-for-wp": "mkdir -p aitattman-blocks && cp -r aitattman-blocks.php build readme.txt LICENSE.txt aitattman-blocks/ && zip -r wp-aitattman-blocks.zip . -i 'aitattman-blocks/*' -m"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "latest",

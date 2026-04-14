@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       AitAttman Blocks
  * Description:       Some essential custom blocks for the Gutenberg Editor to expand WordPress site functionality.
- * Version:           1.2.0
+ * Version:           1.3.0
  * Requires at least: 6.4
  * Requires PHP:      8.1
  * Tested up to:      6.9
@@ -16,33 +16,41 @@
  *
  */
 
-if (!defined('ABSPATH')) {
+/**
+ * You can browse the source code and contribute to this plugin in GitHub:
+ * https://github.com/AitAttman/aitattman-blocks
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
 	/**
 	 * Exit if accessed directly.
 	 */
 	exit;
 }
 
-
-add_action('init', function () {
-	/**
-	 * blocks folders names.
-	 * Blocks names can be also loaded from "build/blocks-manifest.php" when "--blocks-manifest" is used in
-	 * command: wp-scripts build --blocks-manifest
-	 */
-	$blocks = ['button', 'query', 'searchbox', 'sidepanel', 'slider', 'theme-controllers'];
-
-	/**
-	 * Register blocks from the manifest
-	 */
-	foreach ($blocks as $block_name) {
-
-		$block_folder = plugin_dir_path(__FILE__) . 'build/' . $block_name;
+add_action(
+	'init',
+	function () {
+		/**
+		 * blocks folders names.
+		 * Blocks names can be also loaded from "build/blocks-manifest.php" when "--blocks-manifest" is used in
+		 * command: wp-scripts build --blocks-manifest
+		 */
+		$blocks = array( 'button', 'query', 'searchbox', 'sidepanel', 'slider', 'theme-controllers' );
 
 		/**
-		 * do not override title and descriptions in second argument and
-		 * let Wordpress load translations automatically.
+		 * Register blocks from the manifest
 		 */
-		register_block_type_from_metadata($block_folder);
-	}
-}, 10);
+		foreach ( $blocks as $block_name ) {
+
+			$block_folder = plugin_dir_path( __FILE__ ) . 'build/' . $block_name;
+
+			/**
+			 * do not override title and descriptions in second argument and
+			 * let WordPress load translations automatically.
+			 */
+			register_block_type_from_metadata( $block_folder );
+		}
+	},
+	10
+);
